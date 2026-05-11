@@ -1,161 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canadian Cancer Society Fundraising</title>
+<title>Canadian Cancer Society Fundraiser</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        margin:0;
-        background:#f8f9fb;
-        color:#333;
-    }
-    header{
-        background:#d62828;
-        color:white;
-        padding:30px;
-        text-align:center;
-    }
-    nav{
-        background:#222;
-        padding:10px;
-        text-align:center;
-    }
-    nav a{
-        color:white;
-        margin:0 15px;
-        text-decoration:none;
-        font-weight:bold;
-    }
-    .hero{
-        padding:60px 20px;
-        text-align:center;
-        background:white;
-    }
-    .hero h1{
-        color:#d62828;
-        font-size:40px;
-    }
-    .btn{
-        background:#d62828;
-        color:white;
-        padding:15px 25px;
-        text-decoration:none;
-        font-size:18px;
-        border-radius:5px;
-        display:inline-block;
-        margin-top:20px;
-    }
-    .section{
-        padding:50px 20px;
-        max-width:900px;
-        margin:auto;
-    }
-    .donation-box{
-        background:white;
-        padding:30px;
-        border-radius:10px;
-        box-shadow:0 0 10px rgba(0,0,0,0.1);
-        text-align:center;
-    }
-    input{
-        padding:10px;
-        margin:10px;
-        width:200px;
-        font-size:16px;
-    }
-    footer{
-        background:#222;
-        color:white;
-        text-align:center;
-        padding:20px;
-        margin-top:40px;
-    }
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#333;
+}
+
+/* NAVBAR */
+.nav{
+  background:white;
+  padding:15px 30px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+}
+.nav h2{
+  margin:0;
+  color:#0a7c86;
+}
+
+/* HERO */
+.hero{
+  background:url("ribbon.jpg.WEBP.png");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+.hero h1{
+  font-size:40px;
+}
+.hero p{
+  font-size:20px;
+}
+.donate-btn{
+  background:#e63946;
+  color:white;
+  padding:15px 30px;
+  text-decoration:none;
+  font-size:18px;
+  border-radius:6px;
+  display:inline-block;
+  margin-top:20px;
+}
+
+/* SECTIONS */
+.section{
+  padding:60px 25px;
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.section img{
+  width:100%;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+/* IMPACT */
+.impact{
+  background:#f5f5f5;
+  padding:60px 25px;
+}
+.stats{
+  font-size:28px;
+  color:#0a7c86;
+  margin:20px 0;
+}
+
+/* FOOTER */
+.footer{
+  background:#0a7c86;
+  color:white;
+  text-align:center;
+  padding:30px;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>🎗️ Canadian Cancer Society Fundraising</h1>
-    <h2>Our Mission</h2>
-<p>Together we can fight cancer and support patients and families.</p>
+<div class="nav">
+<h2>🎗️ Cancer Fundraiser</h2>
+</div>
 
-<img src="hope.jpg.JPG" width="300">
+<div class="hero">
+<h1>Give Hope. Save Lives.</h1>
+<p>Your donation helps fund cancer research and patient support.</p>
+<a href="https://www.paypal.me/YourName" target="_blank" class="donate-btn">Donate Now</a>
+</div>
 
-<h2>Research</h2>
-<p>Your donations fund life-saving research.</p>
-
-<img src="research.jpg.JPG" width="300">
-
-<h2>Community Support</h2>
-<p>Helping volunteers and families across the world.</p>
-
-<img src="volunteers.jpg.JPG" width="300">
-
+<div class="section">
 <h2>Symbol of Hope</h2>
-<img src="ribbon.jpg.WEBP.png" width="200">
-    <p>Together we can save lives and support families</p>
-</header>
+<p>The ribbon represents strength, courage and support for everyone affected by cancer.</p>
+<img src="ribbon.jpg.WEBP.png">
+</div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="https://www.paypal.me/YourName" target="_blank" class="donate-btn">
-Donate Now
-</a>
-    <a href="#contact">Contact</a>
-</nav>
+<div class="section">
+<h2>Why Research Matters</h2>
+<p>Research saves lives and improves treatments for millions of people.</p>
+<img src="research.jpg.JPG">
+</div>
 
-<section class="hero">
-    <h1>Help Us Fight Cancer</h1>
-    <p>Your donation funds research, support programs, and hope.</p>
-    <a class="btn" href="#donate">Donate Now</a>
-</section>
+<div class="impact">
+<h2>Your Impact</h2>
+<div class="stats">$1,000+ Raised</div>
+<div class="stats">120+ Supporters</div>
+<div class="stats">100% Hope</div>
+<a href="https://www.paypal.me/YourName" target="_blank" class="donate-btn">Donate Today</a>
+</div>
 
-<section id="about" class="section">
-    <h2>About This Fundraiser</h2>
-    <p>
-        This fundraising initiative supports cancer research, patient services,
-        and community programs across Canada.
-        Every dollar helps provide treatment, support families, and save lives.
-    </p>
-</section>
+<div class="section">
+<h2>Our Volunteers</h2>
+<p>People like you make this mission possible.</p>
+<img src="volunteers.jpg.JPG">
+</div>
 
-<section id="donate" class="section">
-    <div class="donation-box">
-        <h2>Make a Donation</h2>
-        <p>Enter an amount to support the cause ❤️</p>
-
-        <input type="number" id="amount" placeholder="$ Amount">
-        <br>
-        <button class="btn" onclick="donate()">Donate</button>
-
-        <p id="thankyou" style="font-weight:bold;"></p>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: fundraising@email.com</p>
-</section>
-
-<footer>
-    <p>© 2026 Canadian Cancer Society Fundraising</p>
-</footer>
-
-<script>
-function donate(){
-    const amount = document.getElementById("amount").value;
-    if(amount === "" || amount <= 0){
-        alert("Please enter a valid donation amount");
-        return;
-    }
-    document.getElementById("thankyou").innerText =
-        "Thank you for donating $" + amount + " ❤️";
-}
-</script>
+<div class="footer">
+<p>© 2026 Cancer Fundraiser</p>
+</div>
 
 </body>
 </html>
